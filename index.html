@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EliteCare Clinic</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">EliteCare</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Book</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero d-flex align-items-center text-white">
+    <div class="container text-center">
+      <h1>Advanced, Compassionate Care</h1>
+      <p class="lead">Your wellness is our top priority.</p>
+      <button class="btn btn-primary btn-lg" onclick="scrollToSection('#booking')">Book Appointment</button>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row g-4">
+        <!-- Repeat for each -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm service-card">
+            <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5>General Consultation</h5>
+              <p>Experienced family physicians dedicated to your well-being.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctors -->
+  <section id="doctors" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Meet Our Doctors</h2>
+      <div class="row g-4">
+        <div class="col-md-3 text-center">
+          <img src="https://via.placeholder.com/150" class="rounded-circle mb-2" alt="">
+          <h5>Dr. Ayesha Kumar</h5>
+          <p>Pediatrician</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Book an Appointment</h2>
+      <form id="appointmentForm" class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="col-md-6">
+          <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
+        </div>
+        <div class="col-md-6">
+          <input type="date" class="form-control" name="date" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" name="notes" rows="3" placeholder="Reason for visit"></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-success btn-lg">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact" class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>📍 Kanayannur, Kerala, India &nbsp;|&nbsp; 📞 +91‑9876543210</p>
+      <p>&copy; 2025 EliteCare Clinic</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
