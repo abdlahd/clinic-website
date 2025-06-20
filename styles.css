@@ -1,23 +1,26 @@
 body {
   scroll-behavior: smooth;
+  background-color: #f8f9fa;
 }
 .hero {
-  background: url('https://source.unsplash.com/1600x800/?clinic,hospital') center/cover no-repeat;
-  height: 80vh;
+  background: url('https://source.unsplash.com/1600x900/?clinic,healthcare') center/cover no-repeat;
+  height: 90vh;
   display: flex;
   align-items: center;
 }
-.navbar-brand { font-size: 1.5rem; }
-.service-card {
+.navbar { transition: background 0.3s; }
+.navbar.scrolled { background: rgba(255,255,255,0.95) !important; }
+.facility, .service-card {
   transition: transform .3s, box-shadow .3s;
 }
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+.facility:hover, .service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
-#appointmentForm {
-  max-width: 800px;
-  margin: auto;
-  background: #fff;
+#appointmentForm { max-width: 900px; margin: auto; }
+.rounded-circle {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 footer { font-size: 0.9rem; }
