@@ -4,6 +4,7 @@ function scrollToSection(id) {
 
 document.getElementById('appointmentForm').addEventListener('submit', e => {
   e.preventDefault();
-  alert('Thanks! We received your booking request.');
+  alert('👍 Thank you! Your appointment request has been received.');
   e.target.reset();
 });
+
