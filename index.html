@@ -9,15 +9,16 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Prestige Clinic</a>
-      <button class="navbar-toggler ms-auto" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#facilities">Facilities</a></li>
           <li class="nav-item"><a class="nav-link" href="#doctors">Doctors</a></li>
           <li class="nav-item"><a class="nav-link" href="#booking">Book</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -29,43 +30,53 @@
   <!-- Hero -->
   <section class="hero d-flex align-items-center text-white">
     <div class="container text-center">
-      <h1 class="display-4 fw-bold">Welcome to Prestige Clinic</h1>
-      <p class="lead">Your health is our dedication.</p>
-      <button class="btn btn-primary btn-lg mt-3" onclick="scrollToSection('#booking')">
+      <h1 class="display-3 fw-bold">Prestige Clinic</h1>
+      <p class="lead">State-of-the-art care, compassionate team.</p>
+      <button class="btn btn-primary btn-lg mt-4" onclick="scrollToSection('#booking')">
         Book Appointment
       </button>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="py-5">
+  <!-- About -->
+  <section id="about" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Our Services</h2>
+      <h2 class="text-center mb-4">About Us</h2>
+      <p class="text-center mx-auto" style="max-width:800px;">
+        Prestige Clinic is dedicated to delivering top-tier healthcare with advanced facilities and a caring professional team. Located in Kanayannur, Kerala, we specialize in comprehensive care—from general checkups to diagnostics.
+      </p>
+    </div>
+  </section>
+
+  <!-- Facilities -->
+  <section id="facilities" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Facilities</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card h-100 shadow service-card">
-            <img src="https://source.unsplash.com/400x250/?healthcare,clinic" class="card-img-top" alt="General Consultation">
+          <div class="card facility h-100 shadow">
+            <img src="https://source.unsplash.com/600x400/?medical-lab" class="card-img-top" alt="Lab">
             <div class="card-body">
-              <h5>General Consultation</h5>
-              <p>Comprehensive consultation with expert general practitioners.</p>
+              <h5 class="card-title">Diagnostic Lab</h5>
+              <p>Equipped with modern lab equipment for fast, accurate results.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow service-card">
-            <img src="https://source.unsplash.com/400x250/?pediatrics,child" class="card-img-top" alt="Pediatric Care">
+          <div class="card facility h-100 shadow">
+            <img src="https://source.unsplash.com/600x400/?medical-scanner" class="card-img-top" alt="Imaging">
             <div class="card-body">
-              <h5>Pediatric Care</h5>
-              <p>Specialist care for children and adolescents.</p>
+              <h5 class="card-title">Imaging Center</h5>
+              <p>Advanced X‑Ray, MRI, and ultrasound facilities on-site.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card h-100 shadow service-card">
-            <img src="https://source.unsplash.com/400x250/?diagnostics,lab" class="card-img-top" alt="Diagnostics">
+          <div class="card facility h-100 shadow">
+            <img src="https://source.unsplash.com/600x400/?clinic-room" class="card-img-top" alt="Consultation">
             <div class="card-body">
-              <h5>Diagnostics</h5>
-              <p>In-house lab tests and imaging for accurate diagnosis.</p>
+              <h5 class="card-title">Consultation Rooms</h5>
+              <p>Privileged comfort and privacy for all patient visits.</p>
             </div>
           </div>
         </div>
@@ -79,20 +90,20 @@
       <h2 class="text-center mb-4">Meet Our Doctors</h2>
       <div class="row g-4">
         <div class="col-md-3 text-center">
-          <img src="https://source.unsplash.com/150x150/?doctor,smile" class="rounded-circle mb-2" alt="Dr. Ayesha Kumar">
-          <h5>Dr. Ayesha Kumar</h5><p>Pediatrician</p>
+          <img src="https://source.unsplash.com/150x150/?female-doctor" class="rounded-circle shadow mb-2" alt="Dr. Ayesha Kumar">
+          <h5 class="mt-2">Dr. Ayesha Kumar</h5><p>Pediatrician</p>
         </div>
         <div class="col-md-3 text-center">
-          <img src="https://source.unsplash.com/150x150/?doctor,portrait" class="rounded-circle mb-2" alt="Dr. Raj Malhotra">
-          <h5>Dr. Raj Malhotra</h5><p>General Physician</p>
+          <img src="https://source.unsplash.com/150x150/?male-doctor" class="rounded-circle shadow mb-2" alt="Dr. Raj Malhotra">
+          <h5 class="mt-2">Dr. Raj Malhotra</h5><p>General Physician</p>
         </div>
         <div class="col-md-3 text-center">
-          <img src="https://source.unsplash.com/150x150/?radiologist,portrait" class="rounded-circle mb-2" alt="Dr. Priya Kapoor">
-          <h5>Dr. Priya Kapoor</h5><p>Radiologist</p>
+          <img src="https://source.unsplash.com/150x150/?radiologist" class="rounded-circle shadow mb-2" alt="Dr. Priya Kapoor">
+          <h5 class="mt-2">Dr. Priya Kapoor</h5><p>Radiologist</p>
         </div>
         <div class="col-md-3 text-center">
-          <img src="https://source.unsplash.com/150x150/?dentist,smile" class="rounded-circle mb-2" alt="Dr. Rahul Sen">
-          <h5>Dr. Rahul Sen</h5><p>Dentist</p>
+          <img src="https://source.unsplash.com/150x150/?dentist" class="rounded-circle shadow mb-2" alt="Dr. Rahul Sen">
+          <h5 class="mt-2">Dr. Rahul Sen</h5><p>Dentist</p>
         </div>
       </div>
     </div>
@@ -102,12 +113,12 @@
   <section id="booking" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Book an Appointment</h2>
-      <form id="appointmentForm" class="row g-3 shadow p-4 rounded">
+      <form id="appointmentForm" class="row g-4 shadow p-4 bg-white rounded">
         <div class="col-md-6"><input type="text" class="form-control" name="name" placeholder="Your Name" required></div>
         <div class="col-md-6"><input type="email" class="form-control" name="email" placeholder="Your Email" required></div>
         <div class="col-md-6"><input type="tel" class="form-control" name="phone" placeholder="Phone Number" required></div>
         <div class="col-md-6"><input type="date" class="form-control" name="date" required></div>
-        <div class="col-12"><textarea class="form-control" name="notes" rows="3" placeholder="Reason for visit"></textarea></div>
+        <div class="col-12"><textarea class="form-control" name="notes" rows="3" placeholder="Reason for Visit"></textarea></div>
         <div class="col-12 text-center">
           <button type="submit" class="btn btn-success btn-lg">Submit</button>
         </div>
